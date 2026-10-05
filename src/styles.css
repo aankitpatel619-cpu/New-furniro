@@ -1,0 +1,39 @@
+:root{--gold:#B88E2F;--cream:#F9F1E7;--soft:#F4F5F7;--ink:#242424}
+body{font-family:Poppins,sans-serif;color:var(--ink)}
+.text-gold{color:var(--gold)}.bg-cream{background:var(--cream)}
+.btn-gold{background:var(--gold);color:#fff;border-radius:0;padding:.7rem 2.5rem;border:0}
+.btn-gold:hover{background:#9c7824;color:#fff}
+.btn-outline-ink{border:1px solid var(--ink);border-radius:10px;padding:.5rem 2rem;background:#fff}
+.btn-outline-gold{border:1px solid var(--gold);color:var(--gold);border-radius:0;padding:.6rem 3rem;background:#fff}
+.brand{font-weight:700;font-size:1.8rem;color:#000;text-decoration:none}
+.nav-icons button{background:none;border:0;font-size:1.4rem}
+.banner{height:200px;background:url(/images/banner.jpg) center/cover}
+.banner h1{font-weight:500}
+.hero{min-height:480px;background:url(/images/hero.jpg) center/cover;display:flex;align-items:center;justify-content:flex-end}
+.hero-box{background:#FFF3E3;padding:2.5rem;max-width:520px;margin:1rem}
+.hero-box h2{color:var(--gold);font-weight:700;font-size:2.4rem}
+.pcard{background:var(--soft);position:relative;overflow:hidden;height:100%}
+.pcard img{width:100%;aspect-ratio:1;object-fit:cover}
+.pcard img[src$=".png"]{object-fit:contain;padding:1rem;background:var(--cream)}
+.pcard .body{padding:1rem}
+.badge-c{position:absolute;top:1rem;right:1rem;width:48px;height:48px;border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.pcard .overlay{position:absolute;inset:0;background:rgba(58,58,58,.75);display:none;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:#fff}
+.pcard:hover .overlay{display:flex}
+.old{color:#B0B0B0;text-decoration:line-through;font-size:.85rem}
+.thumb{width:76px;height:80px;object-fit:cover;border-radius:10px;background:var(--cream);cursor:pointer}
+.swatch{width:30px;height:30px;border-radius:50%;border:0}
+.size-btn{border:0;background:var(--cream);width:30px;height:30px;border-radius:5px;font-size:.8rem}
+.size-btn.on{background:var(--gold);color:#fff}
+.pg-btn{width:60px;height:60px;border:0;border-radius:10px;background:var(--cream);margin:0 .4rem}
+.pg-btn.on{background:var(--gold);color:#fff}
+.cart-side{position:fixed;top:0;right:0;width:417px;max-width:100%;height:auto;min-height:380px;background:#fff;z-index:1050;padding:2rem;box-shadow:0 0 30px rgba(0,0,0,.2)}
+.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1040}
+.cmp td,.cmp th{padding:.9rem 1rem;vertical-align:top;font-size:.9rem}
+.form-control,.form-select{border-radius:10px;border:1px solid #9F9F9F;padding:1rem}
+.footer a{color:#000;text-decoration:none;font-weight:500}
+.muted{color:#9F9F9F}
+.ig{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.ig img{width:100%;height:100%;object-fit:cover}
+@media(max-width:768px){.hero{justify-content:center}.ig{grid-template-columns:repeat(2,1fr)}.hero-box h2{font-size:1.8rem}}
+.heart-on{color:#E97171}.toast-c{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#242424;color:#fff;padding:.8rem 1.5rem;border-radius:10px;z-index:2000}
+.nav-icons{position:relative}.nav-icons a{color:#000;font-size:1.4rem;position:relative;padding:0 .3rem}
+.nav-badge{position:absolute;top:-6px;right:-4px;background:var(--gold);color:#fff;font-size:.65rem;border-radius:50%;min-width:16px;height:16px;display:flex;align-items:center;justify-content:center}
